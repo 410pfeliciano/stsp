@@ -54,7 +54,6 @@ for i = 2:40 % could change the maximum number of iteration
     W_ = repmat(Xc*bta(7:end),1,Nq).*nu';
     [alph,dev(i),stats] = glmfit( W_ ,s_post,'poisson','offset',a_offset,'constant','off');
     wt = 1+alph' * nu;
-%     keyboard
     fprintf('Dev difference: %04.01f in %02.01f \n',abs(dev(i)-dev(i-1)),toc);
     if abs(dev(i)-dev(i-1))<.1;break;end % could change the convergence limit
 end
@@ -69,5 +68,3 @@ theta.b0 = bta(1);
 theta.offset=a_offset;
 theta.X=W_;
 theta.b=alph;
-
-% keyboard
