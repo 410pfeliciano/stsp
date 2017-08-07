@@ -4,6 +4,15 @@ for convinience all codes related to estimating STP parameters are in ```stp_glm
 
 ```addpath(genpath('stp_glm'))```
 
+- data for the in vitro experiment is available in ```in vitro data```
+
+# Demo
+```stp_demo.m``` generates the pre and postsynaptic spiking activity in a connection with TM parameters in ```true_params```
+and estimates the parameters using both TM-GLM and GBLM descibed in:
+
+Ghanbari, A. & Malyshev, A. & Volgushev, M. & Stevenson, I. (2017)
+Estimating short-term synaptic plasticity from pre- and postsynaptic spiking (http://www.biorxiv.org/content/early/2017/06/27/156687)
+
 here we generated pre and postsynaptic spikes from a LIF neuron - replace that with your own data
 
 ```[Tpre, Tpost] = LIFoutput(T,20,50,true_params,1);```
