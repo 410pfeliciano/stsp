@@ -18,7 +18,7 @@ here we generated pre and postsynaptic spikes from a LIF neuron - replace that w
 ```[Tpre, Tpost] = LIFoutput(T,20,50,true_params,1);```
 
 
-a sample of estimated parameters for a facilitating neuron with only few hundreds of spikes and T=50
+a sample of estimated parameters for a facilitating neuron with only few hundreds of spikes and T=50 sec
 
 ![Marginals](https://raw.githubusercontent.com/abedghanbari2/stsp/master/facilitation_screenshot.png)
 

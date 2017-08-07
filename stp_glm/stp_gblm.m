@@ -61,7 +61,7 @@ dev=0;
 tic
 for i = 2:40 % could change the maximum number of iteration 
     Xc_ = repmat(wt,1,nfilt(1)).*Xc; % modified coupling term
-%     bta = glmfit([Xh Xc_],s_post,'poisson'); % glm1 -> estimtes coupling and history filter based on modified coupling term
+    % glm1 -> estimtes coupling and history filter based on modified coupling term
     if i==2
         % initial glm
         bta = glmfit([Xh Xc_],s_post,'poisson');
@@ -71,7 +71,8 @@ for i = 2:40 % could change the maximum number of iteration
     end
     a_offset = Xc*bta(7:end)+bta(1)+Xh*bta(2:6); % static part of the lambda
     W_ = repmat(Xc*bta(7:end),1,Nq).*e; % plastic part of lambda
-    % glm2 -> estimated the modification term (affected by the plasticity)
+    
+    % glm2 -> estimats the modification function (affected by the plasticity)
 %     [alph,stats] = lassoglm( W_ ,s_post,'poisson',...
 %                     'Alpha',1,'NumLambda',NumLambda,'Offset',a_offset,'CV',numCV,'RelTol',1e-3);
     % for faster response ignore NumLambda and provide a single one

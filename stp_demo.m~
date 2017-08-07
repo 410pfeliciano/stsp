@@ -17,8 +17,8 @@ population{1}=Tpre;
 population{2}=Tpost;
 
 %% tm-glm
-delay = [70 200]; % approximate length of the coupling and history filters in ms
-nfilt = [6 5]; % number of filters to estimate coupling and history filters
+delay = [70 200]; % leng
+nfilt = [6 5];
 dt=.001;
 [param_bta, est_params, optimres]= ...
     stp_tmglm(population,T,'dt',dt,'delay',delay,'nfilt',nfilt,'nrestart',1);

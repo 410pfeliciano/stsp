@@ -8,12 +8,6 @@ function [param_bta, param, optimres]= stp_tmglm(population,T,varargin)
 %-OUTPUT-------------------------------------------------------------------
 % param: estimated parameters [D,F,U,f]
 
-% 12/14/2016 --- 12pm
-% 1 - modified version from stp_warm_rr_neg_minFunc.m for in vivo data
-% 2 - no orth basis for coupling filter --> to make sure no biphasic coupling!
-% 3 - what is this line?
-%       x(5) = x(5)*5*sign(randn(1));
-
 % default
 beta_h=[];
 isConstrained = false;
