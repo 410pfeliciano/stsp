@@ -11,7 +11,7 @@ for convinience all codes related to estimating STP parameters are in ```stp_glm
 and estimates the parameters using both TM-GLM and GBLM descibed in:
 
 Ghanbari, A. & Malyshev, A. & Volgushev, M. & Stevenson, I. (2017)
-Estimating short-term synaptic plasticity from pre- and postsynaptic spiking (http://www.biorxiv.org/content/early/2017/06/27/156687)
+Estimating short-term synaptic plasticity from pre- and postsynaptic spiking (http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005738)
 
 here we generated pre and postsynaptic spikes from a LIF neuron - replace that with your own data
 
