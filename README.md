@@ -13,7 +13,7 @@ and estimates the parameters using both TM-GLM and GBLM descibed in:
 Ghanbari, A. & Malyshev, A. & Volgushev, M. & Stevenson, I. (2017)
 Estimating short-term synaptic plasticity from pre- and postsynaptic spiking (http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005738)
 
-here we generated pre and postsynaptic spikes from a LIF neuron - replace that with your own data
+here we generated pre and postsynaptic spikes from an LIF neuron - replace that with your own data
 
 ```[Tpre, Tpost] = LIFoutput(T,20,50,true_params,1);```
 
